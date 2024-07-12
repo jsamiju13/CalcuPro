@@ -10,19 +10,19 @@
 <link rel="icon" type="image/png" href="imagenes/logo bbb.png">
 <audio src="sonidos/sonido_boton_click.mp3" id="audio"></audio>
 <body>
-    <div class="general">
+    <div class="general"> <!-- CAJA GENERAL (FONDO)  -->
         <center>
-            <div class="titulo">
+            <div class="titulo"> <!-- TITULO DE PÁGINA  -->
                 <h1>Calcu<span>Pro</span></h1>
             </div>
         </center>
         
-        <div class="numeros">
+        <div class="numeros"> <!-- CAJA NÚMEROS -->
             <button id="numero1">Numero 1</button>
             <button id="numero2">Numero 2</button>
         </div>
         
-         <div class="botones">
+         <div class="botones"> <!-- CAJA BOTONES -->
             <button id="suma"><i class='bx bx-plus'></i></button>
             <button id="resta"><i class='bx bx-minus' ></i></button>
             <button id="historia">Historial</button>
@@ -30,13 +30,14 @@
             <button id="divi">/</button>
         </div>
         <center>
-            <div class="mensaje">
+            <div class="mensaje"><!-- CAJA MENSAJE (RESULTADO) -->
                 <div>
                     <h3 id="texto">0</h3>
                 </div>
             </div>
         </center>
     </div>
-    <script src="funciones.js"></script>
+
+    <script src="funciones.js"></script> <!-- SCRIPTS (LLAMADA A JS) -->
 </body>
 </html>

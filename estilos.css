@@ -1,4 +1,4 @@
-
+/*CAJA GENERAL (FONDO)*/
 .general{
     
     position: absolute;
@@ -10,12 +10,14 @@
    
 }
 
+/*TODAS LAS PROPIEDADES*/
 *{
     font-family: 'Lovelo', sans-serif;
     transition: all 0.5s ease-out;
     
 }
 
+/*TITULO DE LA PÁGINA (CALCUPRO)*/
 .titulo{
         
     background-color: white;
@@ -31,6 +33,7 @@
     padding-right: 3%;
 }
 
+/*CONTENEDOR DE NUMEROS*/
 .numeros{
     background-color: none;
     margin-left: 2%;
@@ -42,6 +45,7 @@
    padding-bottom: 2%;
 }
 
+/*CONTENEDOR DE BOTONES*/
 .botones{
     background-color: none;
     margin-left: 2%;
@@ -53,7 +57,7 @@
     padding-bottom: 2%;
 }
 
-
+/*CONTENEDOR DEL RESULTADO*/
 .mensaje{
     background-color: none;
     margin-left: 2%;
@@ -63,15 +67,18 @@
     justify-content: space-around;
 }
 
+/*BOTON DIVISOR*/
 #divi{
     padding-left: 2%;
     padding-right: 2%;
 }
 
+/*TODAS LAS PROPIEDADES SPAN*/
 span{
     color: #ff43aa;
 }
 
+/*TODAS LAS PROPIEDADES BUTTON*/
 button{
     font-size: 3vw;
     border-style: solid;
@@ -83,23 +90,29 @@ button{
     color: #444444;
 }
 
+/*TODAS LAS PROPIEDADES AL COLOCAR EL MOUSE SOBRE UN BUTTON*/
 button:hover{
     border-color: #b2e2f2;
     color: #b2e2f2;
 
 }
 
+/*BOTONES DE LA CLASE NUMEROS*/
 .numeros button{
     padding: 4%;
 }
 
+/*BOTONES DE LA CLASE BOTONES*/
 .botones button{
     padding: 2%;
 }
+
+/*TODAS LAS PROPIEDADES H2*/
 h2{
     font-size: 3vw;
 }
 
+/*TODAS LAS PROPIEDADES H3*/
 h3{
     font-size: 3vw;
     padding: 1vw;
@@ -110,7 +123,7 @@ h3{
     color: #444444;
 }
 
-
+/*-----------------------------TODAS LAS PROPIEDADES MEDIA QUERY MAX 600PX (MÓVILES)-----------------------------*/
 @media (max-width: 599px){
 
     .titulo{
@@ -135,6 +148,8 @@ h3{
         font-size: 12vw;
     }
 }
+
+/*-----------------------------TODAS LAS PROPIEDADES FONT FACE (FUENTES DE TEXTO)-----------------------------*/
 
 @font-face {
     font-family: 'Lovelo';
