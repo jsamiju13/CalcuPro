@@ -66,8 +66,6 @@ function calcular(opcion){
     let num2 = parseFloat(botonN2.textContent);
     let res = 0;
 
-    
-
     if (opcion == 1){
         res = (+num1+ +num2)
     }else{
@@ -95,9 +93,5 @@ function calcular(opcion){
             historial.push(mensaje.textContent);
         }
     }
-
-    
-    
-    
 
 }
