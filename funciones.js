@@ -6,7 +6,11 @@ let botonResta = document.querySelector("#resta");
 let botonMulti = document.querySelector("#multi");
 let botonDivi = document.querySelector("#divi");
 
+let botonHistoria = document.querySelector("#historia")
+
 let mensaje = document.querySelector("#texto")
+
+let historial = []
 
 botonN1.addEventListener("click", function(){
 
@@ -44,11 +48,22 @@ botonDivi.addEventListener("click", function(){
 
 });
 
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
+botonHistoria.addEventListener("click", function(){
+
+    alert(historial)
+
+});
 
 function calcular(opcion){
 
     let num1 = parseFloat(botonN1.textContent);
-    let num2 = (botonN2.textContent);
+    let num2 = parseFloat(botonN2.textContent);
     let res = 0;
 
     
@@ -69,14 +84,20 @@ function calcular(opcion){
         }
     }
     
-    mensaje.textContent = res;
+    mensaje.textContent = res.toFixed(1);
 
     if (mensaje.textContent == "NaN"){
         alert("Algo me dice que te faltó algo")
+    }else{
+        if (mensaje.textContent == "Infinity"){
+        alert("Hostia como que infinito :0")
+        }else{
+            historial.push(mensaje.textContent);
+        }
     }
 
-    if (mensaje.textContent == "Infinity"){
-        alert("Hostia como que infinito :0")
-    }
     
+    
+    
+
 }

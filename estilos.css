@@ -11,7 +11,7 @@
 }
 
 *{
-    font-family: "Lovelo";
+    font-family: "Lovelo", sans-serif;
     transition: all 0.5s ease-out;
     
 }
@@ -111,7 +111,33 @@ h3{
 }
 
 
+@media (max-width: 599px){
 
+    .titulo{
+        font-size: 5vw;
+        margin-bottom: 25%;
+    }
+
+    .numeros{
+        margin-bottom: 10%;
+    }
+
+    .botones{
+        margin-bottom: 20%;
+    }
+
+    .mensaje{
+        
+    }
+    button{
+        font-size: 6vw;
+        border-width: 0.8vw;
+    }
+
+    h3{
+        font-size: 12vw;
+    }
+}
 
 
 
