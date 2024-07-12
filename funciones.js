@@ -17,14 +17,14 @@ let historial = []
 botonN1.addEventListener("click", function(){
 
     botonAudio.play();
-    botonN1.textContent =  parseFloat(prompt("Numero 1"));  
+    botonN1.textContent =  parseFloat(prompt("Introduce un número cualquiera"));  
 
 });
 
 botonN2.addEventListener("click", function(){
 
     botonAudio.play();
-    botonN2.textContent =  parseFloat(prompt("Numero 2"));
+    botonN2.textContent =  parseFloat(prompt("Introduce un número cualquiera"));
 
 });
 
@@ -59,7 +59,7 @@ function getRandomInt(min, max) {
 }
 
 botonHistoria.addEventListener("click", function(){
-    
+
     botonAudio.play();
     alert(historial)
    
