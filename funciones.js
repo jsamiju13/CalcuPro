@@ -10,41 +10,45 @@ let botonHistoria = document.querySelector("#historia")
 
 let mensaje = document.querySelector("#texto")
 
+let botonAudio = document.querySelector("#audio")
+
 let historial = []
 
 botonN1.addEventListener("click", function(){
 
-    botonN1.textContent =  parseFloat(prompt("Numero 1"));
+    botonAudio.play();
+    botonN1.textContent =  parseFloat(prompt("Numero 1"));  
 
 });
 
 botonN2.addEventListener("click", function(){
 
+    botonAudio.play();
     botonN2.textContent =  parseFloat(prompt("Numero 2"));
 
 });
 
 botonSuma.addEventListener("click", function(){
-
     calcular(1);
+    botonAudio.play();
 
 });
 
 botonResta.addEventListener("click", function(){
-
     calcular(2);
+    botonAudio.play();
 
 });
 
 botonMulti.addEventListener("click", function(){
-
     calcular(3);
+    botonAudio.play();
 
 });
 
 botonDivi.addEventListener("click", function(){
-
     calcular(4);
+    botonAudio.play();
 
 });
 
@@ -55,9 +59,10 @@ function getRandomInt(min, max) {
 }
 
 botonHistoria.addEventListener("click", function(){
-
+    
+    botonAudio.play();
     alert(historial)
-
+   
 });
 
 function calcular(opcion){
